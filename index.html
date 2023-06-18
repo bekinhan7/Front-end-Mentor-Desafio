@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- exibe o site corretamente com base no dispositivo do usuário -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+    <section class="signup" id="signup">
+      <div class="div1">
+        <h1 class="margin" style="font-size: 40px;">Fique atualizado!</h1>
+        <p class="margin">Junte-se a mais de 60.000 gerentes de produto que <br> recebem atualizações mensais sobre:</p>
+        <p class="margin"><img src="assets/images/icon-list.svg" alt="Icone" width="18px">Descoberta de produtos e construção do que <p class="p2">importa</p></p>
+        <p class="margin"><img src="assets/images/icon-list.svg" alt="Icone" width="18px">Medir para garantir que as atualizações sejam <p class="p2">um sucesso</p></p>
+        <p class="margin"><img src="assets/images/icon-list.svg" alt="Icone" width="18px" class="eu">E muito mais!</p>
+        <form action="#" class="margin">
+          <div class="div2">
+            <label for="email" class="margin">Endereço de email</label>
+            <span class="error disable" id="msg-error">Valid email required</span>
+          </div>
+          <input type="email" name="email" id="email"  placeholder="email@empresa.com" class="margin input2">
+          <button id="btn-submit" class="margin input1">Subscrever a newsletter mensal</button>
+        </form>
+      </div>
+      <div class="image">
+        <picture>
+          <source media="(max-width:768px )" srcset="assets/images/illustration-sign-up-mobile.svg">
+          <img class="img2" src="assets/images/illustration-sign-up-desktop.svg" width="340px" height="450px" alt="">
+        </picture></div>
+    </section>
+    <section class="thanks" id="thanks">
+      <img src="assets/images/icon-success.svg" alt="Icon sucess">
+      <h2>Obrigado <br> por se inscrever!</h2>
+      <p id="thanks-msg">Um e-mail de confirmação foi enviado <br> para email@empresa.com 
+        <br>Por favor, abra-o e clique no botão dentro <br>para confirmar sua assinatura.</p>
+        <button id="btn-dismiss">Mensagem de descarte</button>
+    </section>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
